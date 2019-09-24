@@ -26,14 +26,14 @@ public class compareIt {
 
             Scanner scanner = new Scanner(fil);
             Scanner scanners = new Scanner(fils);
-
+            int count = 0;
             while (scanner.hasNextLine()) {
-
+                count++;
                 String line = scanner.nextLine().toLowerCase().trim();
                 String lines = scanners.nextLine().toLowerCase().trim();
 
                 if (line.equals(lines)) {
-                    System.out.println("Good!");
+                    System.out.println(count + "Good!");
                 }
                 else {
                     System.out.println("No Good!");
